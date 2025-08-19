@@ -1,0 +1,35 @@
+type: LiquidTurret
+name: "fire thrower"
+size: 2
+health: 160
+consumes: {
+power: 1.5
+}
+targetAir: true
+targetGround: true
+range: 150
+reload: 6
+shootSound: spray
+rotateSpeed: 8
+inaccuracy: 1
+ammoTypes: {
+ gas: {
+    type: liquidBulletType
+    liquid: gas
+    lifetime: 150
+	speed: 0.8
+    puddleSize: 6.0
+	knockback: 0.55
+	orbSize:  3.0
+    damage: 14
+    statusDuration: 600
+	status: burning
+  }
+    }
+requirements: [
+  copper/80
+  lead/20
+  metaglass/20
+]
+category: turret
+research: wave

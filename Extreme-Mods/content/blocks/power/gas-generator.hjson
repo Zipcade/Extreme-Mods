@@ -1,0 +1,24 @@
+name: "gas generator"
+type: "ConsumeGenerator"
+health: 55
+size: 1
+placeableLiquid: false
+outputsPower: true
+breakable: true
+buildCostMultiplier: 0.4
+liquidCapacity: 20
+powerProduction: 12.0
+consumes: {
+  liquid: {
+    liquid: gas
+    amount: 0.15
+  }
+}
+requirements: [
+	{
+    liquid: gas,
+    amount: 1
+    },
+]
+category: power
+research: combustion-generator

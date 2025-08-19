@@ -1,0 +1,32 @@
+name: "Missle creater"
+type: "GenericCrafter"
+size: 3
+hasPower: true
+hasItems: true
+craftTime: 360
+health: 240
+itemCapacity: 30
+consumes: {
+   power: 3.0
+    items:[
+    wire/7.0
+    titanium/10.0
+]
+
+    liquids:[
+    gas/0.3
+]
+}
+outputItems: [
+missle/1.0
+]
+requirements: [
+titanium/70
+copper/50
+]
+research: copper-smelter
+requirements: [
+ lead/20
+ copper/100
+  ]
+category: crafting

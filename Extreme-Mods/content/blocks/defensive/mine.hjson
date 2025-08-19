@@ -1,0 +1,21 @@
+name: "Mine"
+type: "ShockMine"
+size: 1
+hasShadow: false
+health: 300
+cooldown: 60
+tileDamage: 1000
+damage: 1000
+length: 10
+requirements: [
+lead/20
+wire/10
+]
+research: { 
+parent: shock-mine
+requirements: [
+ lead/20
+ wire/10
+  ]
+}
+category: defense

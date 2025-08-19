@@ -1,0 +1,27 @@
+name: "Copper smelter"
+type: "GenericCrafter"
+size: 1
+hasPower: false
+hasItems: true
+craftTime: 90
+health: 170
+itemCapacity: 20
+consumes: {
+    items:[
+    coal/3.0
+    copper/1.0
+]
+}
+outputItems: [
+wire/1.0
+]
+requirements: [
+lead/20
+copper/20
+]
+research: silicon-smelter
+requirements: [
+ lead/20
+ copper/20
+  ]
+category: crafting

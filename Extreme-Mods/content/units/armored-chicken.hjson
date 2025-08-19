@@ -1,0 +1,54 @@
+name: "armored-chicken"
+flying: false
+hitSize: 10
+health: 100
+armor: 10
+speed: 4.0
+rotateSpeed: 30
+range: 220
+targetAir: true
+weapons: [
+{
+	name: "scream"
+	bullet: {
+		type: BasicBulletType
+		damage: 4
+		lifetime: 110
+		speed: 2
+		fragBullet: true
+		fragBullets: 360
+		fragSpread: 90
+		status: electrified
+	},
+	x: 0.0
+	y: 0.0
+    shootSound: "chicken-scream"
+    reload: 30
+    rotateSpeed: 4
+    mirror: false
+    rotate: true
+    ignoreRotation: false
+},
+ 
+{
+	name: "claw"
+	bullet: {
+		type: BasicBulletType
+		damage: 10
+		makeFire: false
+		speed: 4
+		lifetime: 4
+		status: tarred
+	}
+	x: 0.0
+	y: 0.0
+    rotateSpeed: 4
+	mirror: false
+    rotate: true
+    ignoreRotation: true
+    shootSound: "pew"
+    reload: 20
+}
+]
+
+research: crawler

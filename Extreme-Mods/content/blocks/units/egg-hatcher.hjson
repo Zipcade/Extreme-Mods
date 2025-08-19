@@ -1,0 +1,51 @@
+type: UnitFactory
+name: "Egg Hatcher"
+size: 3
+health: 550
+consumes: {
+power: 8
+}
+
+plans: [
+  {
+    unit: "extreme-mods-chicken"
+    time: 450
+    requirements: [
+      egg/1.0
+    ]
+  }
+  
+  {
+    unit: "extreme-mods-armored-chicken"
+    time: 500
+    requirements: [
+      egg/1.0
+      titanium/6.0
+    ]
+  }
+  
+   {
+    unit: "extreme-mods-frog"
+    time: 700
+    requirements: [
+      egg/1.0
+      titanium/6.0
+      wire/2
+    ]
+   }
+  ]
+
+requirements: [
+  wire/40
+  copper/60
+  lead/40
+]
+
+category: units
+research: {
+  parent: ground-factory
+  requirements: [
+    egg/100
+    copper/500
+  ]
+}

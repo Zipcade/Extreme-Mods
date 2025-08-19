@@ -1,0 +1,30 @@
+name: "Gas compressor"
+type: "GenericCrafter"
+size: 2
+hasPower: true
+hasItems: true
+craftTime: 300
+health: 170
+itemCapacity: 20
+consumes: {
+   power: 2.0
+    items:[
+    coal/6.0
+]
+    liquids:[
+    water/0.1
+]
+}
+outputLiquids: [
+gas/0.15
+]
+requirements: [
+lead/20
+copper/12
+]
+research: silicon-smelter
+requirements: [
+ lead/20
+ copper/12
+  ]
+category: crafting

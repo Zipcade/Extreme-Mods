@@ -1,0 +1,56 @@
+type: UnitFactory
+name: "Circuit Factory"
+size: 3
+health: 550
+consumes: {
+power: 10
+}
+
+plans: [
+  {
+    unit: land-circuit
+    time: 300
+    requirements: [
+      wire/10
+      silicon/20
+      titanium/20
+    ]
+  }
+  
+   {
+    unit: flying-circuit
+    time: 350
+    requirements: [
+      wire/20
+      silicon/15
+      titanium/15
+    ]
+  }
+  
+  
+    {
+    unit: missle-circuit
+    time: 400
+    requirements: [
+      missle/6
+      copper/15
+      titanium/15
+    ]
+  }
+]
+
+requirements: [
+  wire/40
+  copper/60
+  lead/40
+]
+
+category: units
+research: {
+  parent: ground-factory
+  requirements: [
+    wire/100
+    copper/500
+    lead/400
+  ]
+}

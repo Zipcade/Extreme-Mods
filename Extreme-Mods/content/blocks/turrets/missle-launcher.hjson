@@ -1,0 +1,41 @@
+type: ItemTurret
+name: "Missle launcher"
+size: 3
+health: 500
+hasPower: true
+targetAir: true
+targetGround: true
+range: 300
+shootSound: missle
+rotateSpeed: 6
+reload: 25
+inaccuracy: 0.0
+consumes: {
+	power: 3.0
+}
+ammoTypes: {
+ missle: {
+    type: MissileBulletType
+	frontColor: "ff0000"
+	backColor: "8c8c8c"
+    lifetime: 360
+    speed: 3.0
+    damage: 50
+    splashDamage: 50
+    splashDamageRadius: 30
+	status: burning
+    statusDuration: 120
+    homingRange: 50
+    hitSound: explosion
+  }
+    }
+requirements: [
+  copper/80
+  lead/80
+  titanium/80
+]
+category: turret
+research: fire-thrower
+
+
+
